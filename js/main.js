@@ -15,12 +15,12 @@ const myWork = [
     },
     {
         'title': "Portfolio Boilerplate",
-        'href': "https://example.com",
-        'desc': "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        'href': "http://tre.se",
+        'desc': "This portfolio application was made during a 3-labs week. The application frontend uses ReactJS and is completly serverless. The code for the frontend resides in S3 (AWS) and it is distributed from the AWS CDN. As the code or content is updated on github it triggers a CodeBuild project in which the ReactJS code is bundled and tested in CodePipeline. A lamda function, which takes the output from the build and deploys to the s3 bucket/website, is triggered in the last step of the pipeline.",
         'image': {
             'desc': "A Serverless Portfolio",
             'src': "images/portfolio_architecture.png",
-            'comment': ""
+            'comment': "I really enjoyed creating this portfolio application"
         }
     },
     {
