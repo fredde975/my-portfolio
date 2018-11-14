@@ -47,13 +47,10 @@ describe("ExampleWork component", () => {
 });
 
 describe("ExampleWorkBubble Component", () => {
-  // let mockOpenModalFn = jest.fn();
+  let mockOpenModalFn = jest.fn();
 
-  // let component = shallow(<ExampleWorkBubble example={myWork[1]}
-  //   openModal={mockOpenModalFn}/>);
-
-
-  let component = shallow(<ExampleWorkBubble example={myWork[1]}/>);
+  let component = shallow(<ExampleWorkBubble example={myWork[1]}
+    openModal={mockOpenModalFn}/>);
 
   let images = component.find("img");
 
@@ -64,10 +61,10 @@ describe("ExampleWorkBubble Component", () => {
   it("Should have the img src set correctly", () => {
     expect(images.prop('src')).toEqual(myWork[1].image.src);
   });
-  //
-  // it("Should call the openModal handler when clicked", () => {
-  //   component.find(".section__exampleWrapper").simulate('click');
-  //   expect(mockOpenModalFn).toHaveBeenCalled();
-  // });
+
+  it("Should call the openModal handler when clicked", () => {
+    component.find(".section__exampleWrapper").simulate('click');
+    expect(mockOpenModalFn).toHaveBeenCalled();
+  });
 
 });

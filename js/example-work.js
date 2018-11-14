@@ -1,5 +1,5 @@
 import React from 'react';
-// import ExampleWorkModal from './example-work-modal';
+import ExampleWorkModal from './example-work-modal';
 
 class ExampleWork extends React.Component {
   constructor(props) {
@@ -42,8 +42,8 @@ class ExampleWork extends React.Component {
 
         </section>
 
-{/*        <ExampleWorkModal example={this.state.selectedExample}
-          open={this.state.modalOpen} closeModal={this.closeModal}/>*/}
+        <ExampleWorkModal example={this.state.selectedExample}
+          open={this.state.modalOpen} closeModal={this.closeModal}/>
       </span>
     )
   }
