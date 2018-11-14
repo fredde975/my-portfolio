@@ -42,8 +42,8 @@ class ExampleWork extends React.Component {
 
         </section>
 
-        <ExampleWorkModal example={this.state.selectedExample}
-          open={this.state.modalOpen} closeModal={this.closeModal}/>
+{/*        <ExampleWorkModal example={this.state.selectedExample}
+          open={this.state.modalOpen} closeModal={this.closeModal}/>*/}
       </span>
     )
   }
